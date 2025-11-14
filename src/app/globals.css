@@ -3,24 +3,51 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --surface: #ffffff;
+  --muted: rgba(0, 0, 0, 0.70);
+  --muted-weak: rgba(0, 0, 0, 0.60);
+  --border: rgba(0, 0, 0, 0.10);
+  /* HAVEN brand (approx.) */
+  --brand: #0c6aa6;
+  /* primary blue */
+  --brand-700: #0a5b8e;
+  /* darker hover */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Use CSS variables directly instead of Tailwind @theme tokens for compatibility */
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --surface: #111213;
+    --muted: rgba(255, 255, 255, 0.78);
+    --muted-weak: rgba(255, 255, 255, 0.66);
+    --border: rgba(255, 255, 255, 0.12);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/* Optional utilities that adapt to light/dark via CSS variables */
+.text-muted {
+  color: var(--muted);
+}
+
+.bg-surface {
+  background: var(--surface);
+}
+
+.border-default {
+  border-color: var(--border);
+}
+
+.ring-default {
+  --tw-ring-color: var(--border);
 }
