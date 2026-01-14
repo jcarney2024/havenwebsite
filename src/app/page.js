@@ -15,7 +15,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
-                href="/patients"
+                href="/for-patients"
                 className="inline-flex h-11 items-center justify-center rounded-full px-6 text-white shadow focus:outline-none focus-visible:ring-2"
                 style={{ backgroundColor: "var(--brand)" }}
               >
@@ -27,12 +27,14 @@ export default function Home() {
               >
                 Volunteer
               </Link>
-              <Link
-                href="/donate"
+              <a
+                href="https://yale.imodules.com/s/1667/52/cart/cart.aspx?sid=1667&gid=52&pgid=5767"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex h-11 items-center justify-center rounded-full border border-transparent bg-black/90 px-6 text-white hover:bg-black"
               >
                 Donate
-              </Link>
+              </a>
             </div>
           </div>
           <div className="relative aspect-video w-full rounded-xl ring-1 ring-black/10" style={{ background: "color-mix(in oklab, var(--brand) 10%, transparent)" }} aria-hidden />
@@ -59,7 +61,7 @@ export default function Home() {
           <div className="rounded-xl border border-default p-6 bg-surface">
             <h3 className="font-semibold">Donate</h3>
             <p className="mt-2 text-sm text-muted">Every contribution supports patient care.</p>
-            <Link className="mt-4 inline-flex underline underline-offset-4" style={{ color: "var(--brand)" }} href="/donate">Give now</Link>
+            <a className="mt-4 inline-flex underline underline-offset-4" style={{ color: "var(--brand)" }} href="https://yale.imodules.com/s/1667/52/cart/cart.aspx?sid=1667&gid=52&pgid=5767" target="_blank" rel="noopener noreferrer">Give now</a>
           </div>
           <div className="rounded-xl border border-default p-6 bg-surface">
             <h3 className="font-semibold">Location & Hours</h3>
@@ -77,7 +79,7 @@ export default function Home() {
           <div>
             <h2 className="text-2xl font-semibold">Care for Uninsured Adults</h2>
             <p className="mt-2 text-muted">We provide primary care, wellness education, and assistance in securing health care for uninsured adults in New Haven.</p>
-            <Link className="mt-4 inline-flex underline underline-offset-4" style={{ color: "var(--brand)" }} href="/patients">Patient resources</Link>
+            <Link className="mt-4 inline-flex underline underline-offset-4" style={{ color: "var(--brand)" }} href="/for-patients">Patient resources</Link>
           </div>
           <div className="rounded-xl border border-default h-56 bg-surface" aria-hidden />
         </div>

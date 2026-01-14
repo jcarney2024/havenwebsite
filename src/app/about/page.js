@@ -9,33 +9,42 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
             <h1 className="text-3xl font-semibold tracking-tight">Our Mission</h1>
             <p className="mt-4 text-black/70 max-w-prose">
-                We provide access to comprehensive, high-quality healthcare, free of cost to the New Haven community. Our student-run model brings together learners from medicine, nursing, physician associate programs, and public health to deliver care while advancing community health.
+                We aim to serve uninsured adults in New Haven by providing safe, high-quality primary care, wellness education, and social services, and acting as an avenue toward more sustainable healthcare destinations.
+            </p>
+            <p className="mt-4 text-black/70 max-w-prose">
+                HAVEN also hopes to educate Yale students about the value of working in healthcare, to allow students to gain experience in community health through partnership with patients and professionals, to promote continuous quality improvement through scholarly efforts, and to expose students to patient care management with limited resources.
             </p>
 
-            <div className="mt-10 grid gap-6 sm:grid-cols-2">
-                <div className="rounded-xl border border-default p-6 bg-surface">
-                    <h2 className="font-semibold">What we do</h2>
-                    <p className="mt-2 text-sm text-muted">Primary care, wellness education, and assistance obtaining health coverage.</p>
-                </div>
-                <div className="rounded-xl border border-default p-6 bg-surface">
-                    <h2 className="font-semibold">Who we serve</h2>
-                    <p className="mt-2 text-sm text-muted">Uninsured adults in New Haven, regardless of immigration status or ability to pay.</p>
-                </div>
-            </div>
+            <section className="mt-12">
+                <h2 className="text-2xl font-semibold">Our Vision</h2>
+                <p className="mt-4 text-black/70 max-w-prose">
+                    Every adult living in New Haven will have access to comprehensive quality healthcare.
+                </p>
+                <p className="mt-2 text-black/70 max-w-prose">
+                    Students will develop a lifelong commitment to valuing social context and community needs in their future work with patients and communities.
+                </p>
+            </section>
 
-            <section className="mt-12 grid gap-6 md:grid-cols-3">
-                <div className="rounded-xl border border-default p-6 bg-surface">
-                    <h3 className="font-semibold">Values</h3>
-                    <p className="mt-2 text-sm text-muted">Compassion, equity, partnership, and education are at the core of our work.</p>
-                </div>
-                <div className="rounded-xl border border-default p-6 bg-surface">
-                    <h3 className="font-semibold">Partners</h3>
-                    <p className="mt-2 text-sm text-muted">We partner with Yale University and local organizations to expand access to care.</p>
-                </div>
-                <div className="rounded-xl border border-default p-6 bg-surface">
-                    <h3 className="font-semibold">Leadership</h3>
-                    <p className="mt-2 text-sm text-muted">Student leaders and advisors guide clinic operations and quality improvement.</p>
-                </div>
+            <section className="mt-12">
+                <h2 className="text-2xl font-semibold">Who We Serve</h2>
+                <p className="mt-4 text-black/70 font-semibold">To be a patient, you must*:</p>
+                <ul className="mt-2 text-black/70 list-disc pl-6 space-y-1">
+                    <li>Resident of the Greater New Haven Area.</li>
+                    <li>Between the ages of 18 and 65 years.</li>
+                    <li>Have no active medical coverage/insurance.</li>
+                    <li>Have none of the following active medical concerns: insulin management, HIV/AIDS, pregnancy.</li>
+                </ul>
+                <p className="mt-4 text-sm text-black/60">*Please note that additional criteria may apply and will be assessed prior to acceptance as a new patient.</p>
+            </section>
+
+            <section className="mt-12">
+                <h2 className="text-2xl font-semibold">How We Operate</h2>
+                <p className="mt-4 text-black/70 max-w-prose">
+                    HAVEN operates on Saturdays (9am-12pm) out of the Yale Physicians Building. Patients are seen by teams of senior and junior students with guidance from faculty preceptors. Currently, we see an average of 70 patients per week.
+                </p>
+                <p className="mt-4 text-black/70 max-w-prose">
+                    We are able to do this work through generous contributions from students, faculty, and philanthropic donors. We are especially fortunate to have the support of the <a href="/endowment" className="underline" style={{ color: "var(--brand)" }}>Dr. John B. Goetsch Endowment</a>, which has provided incredible support to the clinic for many years.
+                </p>
             </section>
         </div>
     );
